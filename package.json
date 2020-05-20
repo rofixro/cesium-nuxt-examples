@@ -10,8 +10,8 @@
     "type": "git",
     "url": "git+https://github.com/xiaobo0501/flat-ui-vue.git"
   },
-  "keywords": [],
-  "author": "",
+  "keywords": ["Vue.js", "UI kit", "Components"],
+  "author": "xiaobo0501",
   "license": "MIT",
   "bugs": {
     "url": "https://github.com/xiaobo0501/flat-ui-vue/issues"
