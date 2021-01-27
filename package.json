@@ -1,20 +1,29 @@
 {
   "name": "flat-ui-vue",
-  "version": "0.0.1",
-  "description": "基于 Vue 2.0 的桌面端组件库",
-  "main": "index.js",
+  "version": "0.1.0",
+  "private": true,
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
+    "serve": "vue-cli-service serve",
+    "build": "vue-cli-service build"
   },
-  "repository": {
-    "type": "git",
-    "url": "git+https://github.com/xiaobo0501/flat-ui-vue.git"
+  "dependencies": {
+    "core-js": "^3.6.5",
+    "vue": "^3.0.0",
+    "vue-router": "^4.0.0-0",
+    "vuex": "^4.0.0-0"
   },
-  "keywords": ["Vue.js", "UI kit", "Components"],
-  "author": "xiaobo0501",
-  "license": "MIT",
-  "bugs": {
-    "url": "https://github.com/xiaobo0501/flat-ui-vue/issues"
+  "devDependencies": {
+    "@vue/cli-plugin-babel": "~4.5.0",
+    "@vue/cli-plugin-router": "~4.5.0",
+    "@vue/cli-plugin-vuex": "~4.5.0",
+    "@vue/cli-service": "~4.5.0",
+    "@vue/compiler-sfc": "^3.0.0",
+    "sass": "^1.26.5",
+    "sass-loader": "^8.0.2"
   },
-  "homepage": "https://github.com/xiaobo0501/flat-ui-vue#readme"
+  "browserslist": [
+    "> 1%",
+    "last 2 versions",
+    "not dead"
+  ]
 }
