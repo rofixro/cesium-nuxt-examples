@@ -1,6 +1,14 @@
 <template>
   <button
-    :class="['fl-button', `fl-button--${type}`, disabled ? 'is-disabled' : '']"
+    :class="[
+      'fl-button',
+      {
+        'is-round': round,
+        'is-disabled': disabled,
+      },
+      type ? `fl-button--${type}` : '',
+    ]"
+    @click="handleClick"
   >
     <slot></slot>
   </button>
@@ -11,6 +19,10 @@ export default {
   name: "FlButton",
   props: {
     disabled: {
+      type: Boolean,
+      default: false,
+    },
+    round: {
       type: Boolean,
       default: false,
     },
@@ -29,6 +41,16 @@ export default {
         );
       },
     },
+  },
+  emits: ["click"],
+  setup(props, context) {
+    const handleClick = (event) => {
+      context.emit("click", event);
+    };
+
+    return {
+      handleClick,
+    };
   },
   data() {
     return {};
@@ -160,5 +182,9 @@ export default {
     border-color: #bdc3c7;
     background-color: #bdc3c7;
   }
+}
+
+.is-round {
+  border-radius: 20px;
 }
 </style>

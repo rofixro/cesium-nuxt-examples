@@ -1,6 +1,7 @@
 <template>
   <div class="home">
     <fl-button>默认按钮</fl-button>
+    <fl-button type="primary" round>圆角按钮</fl-button>
     <fl-button type="primary">主要按钮</fl-button>
     <fl-button type="warning">警告按钮</fl-button>
     <fl-button type="danger">危险按钮</fl-button>
@@ -14,6 +15,14 @@
 <script>
 export default {
   name: "Home",
+  data() {
+    return {};
+  },
+  methods: {
+    aaa() {
+      console.log(1);
+    },
+  },
 };
 </script>
 
