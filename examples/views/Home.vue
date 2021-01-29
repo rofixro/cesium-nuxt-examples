@@ -9,6 +9,11 @@
     <fl-button type="inverse">逆向按钮</fl-button>
     <fl-button type="info">信息按钮</fl-button>
     <fl-button disabled>禁用按钮</fl-button>
+    <br>
+    <fl-input placeholder="Inactive" />
+    <fl-input placeholder="Error" status="error" />
+    <fl-input placeholder="Success" status="success" />
+    <fl-input placeholder="Disabled" disabled />
   </div>
 </template>
 

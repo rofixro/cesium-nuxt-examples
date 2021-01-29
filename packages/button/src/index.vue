@@ -42,7 +42,9 @@ export default {
       },
     },
   },
+
   emits: ["click"],
+  
   setup(props, context) {
     const handleClick = (event) => {
       context.emit("click", event);
